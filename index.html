@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>J&J Cleaning Service</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f0f4f8;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: linear-gradient(135deg, #00d4b4, #ff7e5f);
+      color: white;
+      text-align: center;
+      padding: 4em 1em;
+      position: relative;
+    }
+    header h1 {
+      font-size: 3em;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+    header p {
+      font-size: 1.5em;
+      margin: 0.5em 0;
+    }
+    .hero-cta {
+      display: inline-block;
+      background-color: #ff7e5f;
+      color: white;
+      padding: 1em 2em;
+      text-decoration: none;
+      border-radius: 50px;
+      font-size: 1.2em;
+      margin-top: 1em;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .hero-cta:hover {
+      transform: scale(1.1);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+    nav {
+      background-color: #333;
+      padding: 1em;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1.5em;
+      font-size: 1.1em;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #00d4b4;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 2em auto;
+      padding: 0 1em;
+    }
+    .section {
+      background: white;
+      padding: 2em;
+      margin: 1em 0;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      animation: fadeIn 1s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .section h2 {
+      color: #00d4b4;
+      font-size: 2em;
+      margin-bottom: 0.5em;
+    }
+    .service-item {
+      display: flex;
+      align-items: center;
+      margin: 1.5em 0;
+      padding: 1em;
+      background: #f9f9f9;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+    .service-item:hover {
+      transform: translateY(-5px);
+    }
+    .service-item h3 {
+      font-size: 1.4em;
+      color: #ff7e5f;
+      margin-right: 1em;
+    }
+    .service-item p {
+      flex: 1;
+    }
+    .cta-button {
+      display: inline-block;
+      background: linear-gradient(45deg, #00d4b4, #ff7e5f);
+      color: white;
+      padding: 1em 2em;
+      text-decoration: none;
+      border-radius: 50px;
+      font-size: 1.2em;
+      margin: 1em 0;
+      transition: transform 0.3s;
+    }
+    .cta-button:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      background: linear-gradient(135deg, #333, #555);
+      color: white;
+      padding: 1.5em;
+      text-align: center;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+      header p {
+        font-size: 1.2em;
+      }
+      nav a {
+        display: block;
+        margin: 0.5em 0;
+      }
+      .service-item {
+        flex-direction: column;
+        text-align: center;
+      }
+      .service-item h3 {
+        margin-bottom: 0.5em;
+      }
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>J&J Cleaning Service ✨🧹</h1>
+    <p>Keeping Your House Sparkly! 🌟</p>
+    <a href="#contact" class="hero-cta">Book Now! 📞</a>
+  </header>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="container" id="home">
+    <div class="section">
+      <h2>Welcome to J&J Cleaning! 😎</h2>
+      <p>We’re Jackson and Jackson, two friends with a passion for making your home shine! Based in Wagner, South Dakota, J&J Cleaning offers affordable, reliable cleaning services to keep your space spotless. Book today and let us handle the dirty work! 🚀</p>
+    </div>
+  </div>
+  <div class="container" id="services">
+    <div class="section">
+      <h2>Our Services 🧼</h2>
+      <div class="service-item">
+        <h3>Trash Can Cleaning 🗑️</h3>
+        <p>Say goodbye to smelly bins! We clean and sanitize for only <strong>$3.50</strong>.</p>
+      </div>
+      <div class="service-item">
+        <h3>Driveway Cleaning 🚿</h3>
+        <p>Wash away dirt and grime for a pristine look. Just <strong>$4.50</strong>.</p>
+      </div>
+      <div class="service-item">
+        <h3>Yard Pickup 🍂</h3>
+        <p>Clear acorns, sticks, and debris for a tidy lawn. Only <strong>$5.00</strong>.</p>
+      </div>
+      <div class="service-item">
+        <h3>Magnet Cleaning (Yard) 🧲</h3>
+        <p>Safely remove magnetic debris from your yard. Just <strong>$3.50</strong>.</p>
+      </div>
+    </div>
+  </div>
+  <div class="container" id="about">
+    <div class="section">
+      <h2>About Us ✅</h2>
+      <p>We’re J&J Cleaning, founded by two Jacksons who love a clean home! Our mission is to provide top-notch cleaning services at prices that won’t break the bank. With friendly service and a commitment to quality, we’re here to make your life easier. 🏡</p>
+    </div>
+  </div>
+  <div class="container" id="contact">
+    <div class="section">
+      <h2>Contact Us 📧</h2>
+      <p>Ready to book? Reach out today to schedule your cleaning!</p>
+      <p><strong>Phone:</strong> <a href="tel:+16052231385">(605) 223-1385</a> 📞</p>
+      <p><strong>Email:</strong> <a href="mailto:jjcleaning255@gmail.com">jjcleaning255@gmail.com</a> ✉️</p>
+      <p>Serving Wagner, South Dakota and surrounding areas.</p>
+      <a href="tel:+16052231385" class="cta-button">Call Now! 🧹</a>
+    </div>
+  </div>
+  <footer>
+    <p>© 2025 J&J Cleaning Service. All rights reserved. ✨</p>
+  </footer>
+</body>
+</html>
